@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Список профессий</h2>
+    {% if list_type == 'ol' %}
+        <ol>
+            {% for prof in list_ %}
+            <li>{{ prof }}</li>
+            {% endfor %}
+        </ol>
+    {% elif list_type == 'ul' %}
+        <ul>
+            {% for prof in list_ %}
+            <li>{{ prof }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h3>НЕВЕРНОЕ ЗНАЧЕНИЕ!</h3>
+    {% endif %}
+{% endblock %}
