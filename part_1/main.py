@@ -41,6 +41,20 @@ def list_prof(type_):
     return render_template('list_prof.html', list_=professions, list_type=type_)
 
 
+@app.route('/distribution')
+def distribution():
+    peoples = [
+        'Ридли Скотт',
+        'Энди Уир',
+        'Марк Уотни',
+        'Венката Капур',
+        'Тедди Сандерс',
+        'Шон Бин',
+    ]
+
+    return render_template('distribution.html', peoples=peoples)
+
+
 if __name__ == '__main__':
     app.debug = 1
     app.run(port=8080, host='127.0.0.1')
