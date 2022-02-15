@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Результаты отбора</h1>
+<h2>Претендента на участие в миссии {{ nickname }}:</h2>
+<div class="alert alert-success" role="alert">
+    <b>Поздравляем! Ваш рейтинг после {{ level }} этапа отбора</b>
+</div>
+<div class="alert alert-light" role="alert">
+    <b>Составляет {{ rating }}!</b>
+</div>
+<div class="alert alert-warning" role="alert">
+    <b>Желаем удачи!</b>
+</div>
+{% endblock %}

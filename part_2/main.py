@@ -82,5 +82,10 @@ def choice(planet_name):
     return render_template('choice.html', title='Варианты выбора', planet=planet_name)
 
 
+@app.route('/results/<nickname>/<int:level>/<float:rating>')
+def results(nickname, level, rating):
+    return render_template('results.html', title='Результаты', nickname=nickname, level=level, rating=rating)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
