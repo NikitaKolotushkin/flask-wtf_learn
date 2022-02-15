@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Мое предложение: {{ planet }}</h1>
+<h3>Эта планета близка к Земле;</h3>
+
+
+<div class="alert alert-success" role="alert">
+    <b>На ней много необходимых ресурсов;</b>
+</div>
+<div class="alert alert-dark" role="alert">
+    <b>На ней есть вода и атмосфера;</b>
+</div>
+<div class="alert alert-warning" role="alert">
+    <b>На ней есть небольшое магнитное поле;</b>
+</div>
+<div class="alert alert-danger" role="alert">
+    <b>Наконец, она просто красива!</b>
+</div>
+
+{% endblock %}
